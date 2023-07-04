@@ -1,0 +1,66 @@
+.box1 {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 15px 0px 10px 0px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 50%;
+}
+.innerBox1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2%;
+}
+.titleBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+.course_title {
+    font-style: 'Roboto';
+    font-size: medium;
+    font-weight: 700;
+    padding-left: 3px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    flex: 1;
+}
+.delete {
+    margin: 0;
+    padding: 0;
+    color: lightgray;
+    font-weight: 700;
+    border-radius: 15px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-left: 15px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+@media (max-width: 786px) {
+    .box1 {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        padding: 15px 0px 10px 0px;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 85%;
+    }
+}
+@media (min-width: 787px) and (max-width: 1100px) {
+    .box1 {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        padding: 15px 0px 10px 0px;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 80%;
+    }
+}

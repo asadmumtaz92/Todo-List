@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import styles from './styles/AddNewGoal.module.css'
 
 const AddNewGoal = (props) => {
@@ -7,7 +7,7 @@ const AddNewGoal = (props) => {
     const [courseGoalError, setCourseGoalError] = useState('')
 
     const courseGoalHandler = (event) => {
-        // setCourseGoalError('')
+        setCourseGoalError('')
         setCourseGoal(event?.target?.value)
     }
 
@@ -16,15 +16,12 @@ const AddNewGoal = (props) => {
             props?.AddNewGoal(courseGoal)
             setTimeout(() => {
                 setCourseGoal('')
-            }, 500);
+            }, 100);
         }
         else {
-            setCourseGoalError('Enter some text first...')
+            setCourseGoalError('Enter your course title...')
         }
     }
-    useEffect(() => {
-        setCourseGoalError('')
-    }, [courseGoal])
 
     return (
         <div className={styles.box}>

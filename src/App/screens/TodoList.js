@@ -20,7 +20,7 @@ const TodoList = () => {
     }
 
     return (
-        <div className={styles.App}>
+        <div className={styles.todo}>
             <AddNewGoal AddNewGoal={AddNewGoals} />
             {course?.length > 0 && <ShowGoals course={course} deleteHandler={deleteHandler} />}
         </div>

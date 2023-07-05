@@ -1,66 +1,65 @@
 .box1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 1px 0px 20px 0px;
     border-radius: 8px;
-    padding: 15px 0px 10px 0px;
     margin: 0 auto;
-    margin-top: 30px;
     width: 50%;
+    margin-top: 30px;
 }
 .innerBox1 {
-    display: flex;
     flex-direction: column;
-    margin: 0 2%;
+    margin: 0px 2%;
+    display: flex;
 }
 .titleBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    border-bottom: 1px solid lightgray;
     justify-content: center;
-    border-bottom: 1px solid gray;
-    margin-bottom: 10px;
+    align-items: center;
+    flex-direction: row;
     padding-right: 5px;
+    display: flex;
 }
-
 .course_title {
-    font-style: 'Roboto';
-    font-size: medium;
-    font-weight: 700;
-    padding-left: 3px;
     text-transform: capitalize;
+    font-family: 'Quicksand';
     margin-bottom: 5px;
+    padding-left: 3px;
+    font-weight: 700;
+    font-size:large;
     flex: 1;
 }
 .delete {
     margin: 0;
     padding: 0;
-    color: lightgray;
-    font-weight: 700;
+    border: 1px solid lightgray;
     border-radius: 15px;
+    text-align: center;
+    color: lightgray;
+    margin-left: 15px;
+    font-weight: 700;
+    cursor: pointer;
     height: 20px;
     width: 20px;
-    text-align: center;
-    margin-left: 15px;
-    border: 1px solid lightgray;
-    cursor: pointer;
 }
 
 @media (max-width: 786px) {
     .box1 {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        padding: 1px 0px 20px 0px;
         border-radius: 8px;
-        padding: 15px 0px 10px 0px;
+        width: 85%;
         margin: 0 auto;
         margin-top: 30px;
-        width: 85%;
     }
 }
+
 @media (min-width: 787px) and (max-width: 1100px) {
     .box1 {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        padding: 1px 0px 20px 0px;
         border-radius: 8px;
-        padding: 15px 0px 10px 0px;
+        width: 80%;
         margin: 0 auto;
         margin-top: 30px;
-        width: 80%;
     }
 }
